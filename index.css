@@ -1,0 +1,408 @@
+:root{
+
+--font:font-family: "Odibee Sans", serif;     
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Amiri', serif;
+      
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding: 0; 
+    gap: 30px;  
+}
+li{
+font-family: "Odibee Sans", serif;
+font-size: 20px;
+position: relative;
+list-style: none;
+margin: 0 20px;
+}
+
+nav{
+    display: flex;
+    flex-direction: row-reverse;
+    font-family:var(--font);
+    justify-content: space-between;
+    padding-left: 70px;
+    padding-right: 80px;
+
+}
+.logo{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items: center;
+    height: 60px;
+}
+.name{
+    font-size: 20px;
+}
+img{
+    height: 95%; 
+    cursor: pointer;
+}
+a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #c4890c;
+}
+li::after{
+    content: '';
+    width:0;
+    height: 3px;
+    background: #be9202;
+    position: absolute;
+    left: 0;
+    top: 30px;
+}
+li:hover::after{
+    width: 100%;
+    transition: 0.5s;
+}
+.hero_section{
+  position: relative;
+  z-index: 1;
+background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)),url(./photos/7fef4629855880ded24a9e9686f80eaf.jpg);
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+    height: 100vh;               /* Full viewport height */             /* Enables flexbox for centering content */
+    align-items: center;         /* Vertically centers content */
+    justify-content: center;     /* Horizontally centers content */
+    color: white;                /* White text for contrast */
+    text-align: center; 
+    object-fit: contain;
+    overflow: hidden;
+    
+}
+.textes{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: white;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.first {
+    letter-spacing: 3px;
+    margin-bottom: 30px;
+    width:60% ;
+    text-align: center;
+    font-size: 3.2rem;     
+    font-family: uthmantn;      /* Adjust title size */
+
+  }
+  .p-first{
+    width:60% ;
+    text-align:center ;
+    font-size: 1.2rem;           /* Adjust paragraph size */
+    line-height: 1.5;            
+  }
+  .btn{
+    border: 0.846px solid #c4890c;
+    border-radius: 20px;
+    background-color: #000000;
+    margin-top: 40px;
+    height: 37px;
+    width: 100px;
+    color: #c4890c;
+    font-family: "Odibee Sans";
+    font-size: 26.816px;
+    cursor: pointer;
+}
+.btn:hover{
+    border: 0.846px solid #c4890c;
+    background-color: #c4890c;
+    color: #000000;
+    transition: 0.9s;
+}
+
+.def{
+  position: relative;
+    display: flex;
+    flex-direction:row-reverse;
+    justify-content:space-around;
+    align-items: center;
+    color: #0e0e0e;
+    text-align: center; 
+    padding-right: 70px;  
+    padding-right: 0px;
+    overflow: hidden;
+    height: 100%;
+    z-index: 1;
+}
+.def p{
+    width: 500px;
+    font-size: 1.2rem;
+}
+.coin {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 300px; /* Adjust the size as needed */
+  height: auto;
+  border-radius: 10%; /* Optional: Adjust the border radius */
+  transform: translate(50%, -50%); 
+}
+.coin2 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 300px; /* Adjust the size as needed */
+  height: auto;
+  border-radius: 10%; /* Optional: Adjust the border radius */
+  transform: translate(-50%, 50%) rotate(180deg); 
+}
+.photo{
+    border: solid black 1px;
+    border-radius: 50%;
+    position: relative;
+    z-index: 1;
+    margin-top: 20px;
+}
+
+.courses{
+  position: relative;
+  z-index: 1;
+    background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)),url(./photos/photo-1641816514743-d264c1481585.jpg);
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+text-align: center;
+color: aliceblue;
+font-size: 3.2rem;
+}
+.cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 50px;
+    justify-items: center;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+
+}
+.cards .course{
+    width:80%;
+    padding-bottom: 30px;
+    background: #c48a0cec;
+    border-radius: 10px;
+    text-align: center;
+    color: #000000;
+    font-family: "Odibee Sans";
+    font-size: 20.816px;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+.cards img{
+    margin-top: 5px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.cards .course .h2{
+    font-size: 1.5rem;
+    margin-top: 10px;
+}
+.cards .course .p{
+    font-size: 1rem;
+    margin-top: 10px;
+}
+.de{
+    padding-right: 0;
+    padding-top:  30px; 
+    display: flex;
+    flex-direction:row;
+    justify-content:space-around;
+    align-items: center;
+    color: #c4890c;
+    text-align: center; 
+    padding-right: 70px;  
+}
+.de p{
+    width: 500px;
+    font-size: 1.2rem;
+}
+
+.footer{
+    background-color: #000000;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 10vh;
+    font-family: "baloo";
+    font-size: 20px;
+}
+/***********cources**************/
+@media (max-width: 1200px) {
+    .course {
+      flex: 1 1 calc(50% - 40px); /* 2 cards per row on medium screens */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .course {
+      flex: 1 1 calc(100% - 40px); /* 1 card per row on small screens */
+    }
+  }
+   /********************************************de*/
+   @media (max-width: 1200px) {
+    .de {
+      flex-direction: row; /* Keep the default direction */
+    }
+  
+    .de p {
+      font-size: 1.1rem; /* Smaller font size for medium screens */
+    }
+  
+    .de img {
+      width: 50%; /* Smaller image size for medium screens */
+    }
+  }
+
+  @media (max-width: 768px) {
+    .de {
+      flex-direction: column; 
+      gap: 15px;/* Change direction for small screens */
+      height:100% ;
+      font-size: 1rem;
+    }
+    .de p{
+        width:93%;
+        height:70%;
+    }
+  }
+
+  @media (max-width: 1200px) {
+    .def {
+      flex-direction: row; /* Keep the default direction */
+    }
+  
+    .def p {
+      font-size: 1.1rem; /* Smaller font size for medium screens */
+      position: relative;
+      z-index: 1;
+    }
+  
+    .def img {
+      width: 50%; 
+      /* Smaller image size for medium screens */
+    }
+  }
+
+  @media (max-width: 768px) {
+    .def {
+      flex-direction: column; 
+      gap: 15px;/* Change direction for small screens */
+      height:100% ;
+      font-size: 1rem;
+    }
+    .def p{
+        width:93%;
+        height:70%;
+        margin-bottom: 40px;
+    }
+  }
+
+  @media (max-width: 1200px) {
+    .coin {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 100px; /* Adjust the size as needed */
+      height: auto;
+      border-radius: 10%; /* Optional: Adjust the border radius */
+      transform: translate(50%, -50%); 
+    }
+  }
+
+  @media (max-width: 1200px) {
+
+  }
+  @media (max-width: 768px) {
+    .hero_section {
+      padding: 10px;
+    }
+  
+    nav {
+      align-items: center;
+      padding: 0;
+    }
+  ul {
+    flex-direction: column;
+    align-items: center;
+    gap :0px;
+  }
+
+  li {
+    margin: 0px 20px;
+  }
+
+  .textes {
+    padding: 10px;
+  }
+
+  .btn {
+    font-size: 18px;
+    padding: 10px 20px;
+  }
+}
+@media (max-width: 700px){
+    .first{
+        font-size: 2.5rem;
+    }
+    .p-first{
+        font-size: 1rem;
+    }
+    .btn{
+        font-size: 20px;
+    }
+    .name{
+        font-size: 15px;
+    }
+    li{
+        font-size: 15px;
+    }
+}
+@media (max-width: 550px){
+  .logo{
+    display: none;
+  }
+}
+@media (max-width: 400px){
+  .noun{
+    display:none;
+  }
+  li{
+    margin: 0px 15px;
+  }
+  .first{
+    font-size: 3.2rem;
+    width: auto;
+    letter-spacing: 0px;
+  }
+  .p-first{
+    width: auto;
+    font-size: 1rem;
+  }
+  .btn{
+    padding: 0px 0px;
+  }
+  .lessons{
+    font-size: 3.5rem;
+  }
+  .last{
+    font-size: 1rem;
+  }
+}
